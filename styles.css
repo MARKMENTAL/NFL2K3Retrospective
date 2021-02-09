@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+
+html {
+   background: white;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: WhiteSmoke;
+   max-width: 1200px;
+   min-width: 420px;
+   margin: 0px auto;
+   border: 1px solid rgb(221, 221, 221);
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+}
+
+
+/* Header Styles */
+
+body > header {
+   width: 100%;
+   background-color: steelblue;
+}
+
+/*NFL 2k3 logo*/
+img#NFL {
+   width: 20%;
+   float:left;
+   box-shadow: 10px 10px 15px black;
+}
+
+img#segasports {
+   width: 20%;
+   float: right;
+   height: 70%;
+}
+
+/*Title NFL 2K Retrospective*/
+h1#title {
+   color:white;
+   padding: 170px;
+   font-size: 30px;
+   padding-bottom: 35px;
+   padding-right: 2px;
+   padding-left:400px;
+   text-shadow: black 3px 3px 10px;
+   background-color:steelblue;
+}
+p#subtitle{
+   color:white;
+   font-size: 15px;
+   padding-bottom: 15px;
+   padding-right: 2px;
+   padding-left:28px;
+   text-shadow: black 3px 3px 10px;
+   background-color:steelblue;  
+}
+
+
+/*Media Queries*/
+@media only screen and (max-width: 980px) {
+  h1#title {
+    color:steelblue;
+    text-shadow:none;
+  }
+}
+
+/* Section Styles: Code that is inserted from JavaScript */
+
+img#afclogo {
+   height: 14px;
+   float: right;
+
+}
+
+img#nfclogo {
+   height:14px;
+   float:right;
+}
+
+section {
+   -webkit-flex: 1 1 500px;
+   flex: 1 1 500px;
+   padding-left: 30px;
+   padding-bottom: 10px;
+}
+
+section >  h1 {
+   font-size: 3em;
+   letter-spacing: 0.12em;
+   line-height: 1.4em;
+   font-weight: normal;
+   color: red;
+   font-family:monospace;
+   text-shadow: black 2px 2px 2px;
+   margin: 10px 0px 20px 0px;
+}
+
+section table {
+   margin: 10px 0px 5px 0px;
+}
+
+section table caption {
+   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+   color: rgb(42, 57, 144);
+   font-size: 1.9em;
+   font-weight: bold;
+   letter-spacing: 0.08em;
+   margin-bottom: 10px;
+}
+
+section table tr:first-of-type th:last-of-type {
+   text-align: right;
+}
+
+th {border-bottom: 1px solid black;}
+
+section table tr td:first-of-type {
+   width: 120px;
+}
+
+section table tr td:nth-of-type(3) {
+   width: 150px;
+   text-align: left;
+   padding-right: 7px;
+}
+
+
+
+td.AFC {background-color: red;}
+td.NFC {background-color: steelblue;}
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer p {
+   color: white;
+   font-size: 1.5em;
+   text-align: center;
+   background-color: steelblue;
+   margin: 0px;
+   padding: 10px;
+}
+img#tux {
+   display: inline-block;
+   width: 40px;
+   height:40px;
+   float:center;
+   margin-bottom: -10px;
+}
+
+img#firefox {
+   display: inline-block;
+   width: 40px;
+   height:40px;
+   float:center;
+   margin-bottom: -10px;
+}
+
+p#disclosure{
+font-size: 0.8em;
+}
+
