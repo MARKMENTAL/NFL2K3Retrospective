@@ -15,7 +15,7 @@
         without even the implied warranty of MERCHANTABILITY or FITNESS
         FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
         *
-        @licend /
+        @licend */
 
 /* Callback Function to calculate an array sum */
 function calcSumWin(value) {
@@ -49,7 +49,7 @@ function teamRows(divisionNum, totalWins, totalLosses) {
     return rowHTML;
 }
 
-//function to create bar graphs
+//function to create bar graphs and conference logo meters
 function createBar(confType) {
 
     var barHTML = "";
@@ -64,6 +64,18 @@ function createBar(confType) {
             return barHTML;
     }
 }
+//function gets ProBowlQB info from NFLInfo.js and shows as html
+function ProBowlQBProjection() {
+    var proHTML = "";
+    proHTML += "<table id ='ProBowlAFC'>" + "<caption> AFC Predicted Pro Bowl QB </caption>";
+    proHTML += "<tr><th> Player</th> <th> Team</th></tr>";
+    proHTML += "<tr><td>" + AFCProQB[0] + "</td>" + "<td>" + AFCProQB[1] + "</td></tr> </table>";
+    proHTML += "<table id ='ProBowlNFC'>" + "<caption> NFC Predicted Pro Bowl QB </caption>";
+    proHTML += "<tr><th> Player</th> <th> Team</th></tr>";
+    proHTML += "<tr><td>" + NFCProQB[0] + "</td>" + "<td>" + NFCProQB[1] + "</td></tr>";
+    return proHTML;
+}
+
 
 var reportHTML = "<h1>" + gameTitle + "</h1>";
 var i;
@@ -76,5 +88,5 @@ for (i = 0; i < division.length; i++) {
     reportHTML += "</table>";
 }
 
-
+reportHTML += ProBowlQBProjection()
 document.getElementsByTagName("section")[0].innerHTML = reportHTML;
