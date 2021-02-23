@@ -29,8 +29,8 @@ function calcSumLoss(value) {
 
 function teamRows(divisionNum, totalWins, totalLosses) {
     var rowHTML = '';
-    rowHTML += "<table>" + "<caption>" + division[i] + "</caption>" + "<tr><th>Team</th><th>Wins & Losses </th>";
-    rowHTML += "<th> Visual Representation </th></tr>";
+    rowHTML += "<table>" + "<caption>" + division[i] + "</caption>" + "<tr><th>Team</th><th>W/L </th>";
+    rowHTML += "<th> Visual </th></tr>";
     for (var j = 0; j < 4; j++) {
         var teamName = team[divisionNum][j];
         var teamConference = conference[divisionNum][j];
@@ -57,10 +57,10 @@ function createBar(confType) {
 
     switch (confType) {
         case "AFC":
-            barHTML = "<img src ='afclogo.png' id ='afclogo' ><td class='AFC'></td>";
+            barHTML = "<img src ='https://nfl2k3fantasyseasons.neocities.org/afclogo.png' id ='afclogo' ><td class='AFC'></td>";
             return barHTML;
         case "NFC":
-            barHTML = "<img src ='nfclogo.png' id ='nfclogo' ><td class='NFC'></td>";
+            barHTML = "<img src ='https://nfl2k3fantasyseasons.neocities.org/nfclogo.png' id ='nfclogo' ><td class='NFC'></td>";
             return barHTML;
     }
 }
