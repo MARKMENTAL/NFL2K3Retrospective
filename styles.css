@@ -16,17 +16,17 @@ body > header {
 }
 /*NFL 2k3 logo*/
 img#NFL {
-	width: 12%;
-	float: left;
-	box-shadow: 10px 10px 15px black;
-	border: 10px solid black;
+	width: 10%;
+    float: left;
+    box-shadow: 10px 10px 15px black;
+    border: 10px solid black;
 }
 /*Title NFL 2K Retrospective*/
 h1#title {
 	color: white;
 	font-size: 30px;
 	padding-right: 2px;
-	padding-left:550px;
+	padding-left:500px;
 	padding-top: 10px;
 	margin: -10px;
 	text-shadow: black 2px 2px 2px;
@@ -42,11 +42,13 @@ p#subtitle{
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 46%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 46%;
+    position: relative;
+    right: -160px;
 }
 
 li {
