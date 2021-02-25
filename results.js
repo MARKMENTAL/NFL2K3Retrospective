@@ -36,9 +36,15 @@ function teamRows(divisionNum, totalWins, totalLosses) {
         var teamConference = conference[divisionNum][j];
         var teamWins = wins[divisionNum][j];
         var teamLosses = losses[divisionNum][j];
-        rowHTML += '<tr>' + '<td>' + teamName + '</td>';
+        if (teamName.includes("Tampa")) {
+            rowHTML += '<tr>' + '<td style = "color:darkred;"> <b>' + teamName + ' </td></b>';
+        }
+        else {
+            rowHTML += '<tr>' + '<td>' + teamName + '</td>';
+        }
         rowHTML += '<td>' + teamWins.toLocaleString() + '</td>';
         rowHTML += '<td>' + teamLosses.toLocaleString() + '</td>';
+
         for (var k = 0; k < teamWins; k++) {
             rowHTML += createBar(teamConference, totalWins);
         }
